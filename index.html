@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #0438a9;
+            color: rgb(115, 72, 72);
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        input {
+            padding: 10px;
+            width: 50%;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            font-size: 18px;
+            background: #333;
+            margin: 5px auto;
+            width: 50%;
+            border-radius: 5px;
+            transition: all 0.4s ease;
+        }
+        .highlight {
+            background: #ba7f28 !important;
+            color: black;
+            transform: scale(1.1);
+            font-weight: bold;
+            box-shadow: 0 0 10px #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Your Favorite Song</h1>
+    <input type="text" id="searchBox" placeholder="Search for a song..." onkeyup="searchSong()">
+    
+    <ul id="songList">
+        <li>Photo song</li>
+        <li>Hanuman Chalisa</li>
+        <li>Faded</li>
+        <li>Despacito</li>
+        <li>Let Me Down Slowly</li>
+        <li>Closer</li>
+        <li>Perfect</li>
+        <li>Memories</li>
+        <li>Havana</li>
+        <li>Senorita</li>
+    </ul>
+    <!-- <iframe src="https://streamtape.com/e/BqjwzjRrkwtyk7y/" width="800" height="600" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe>
+    --><script> 
+        function searchSong() {
+            let input = document.getElementById("searchBox").value.toLowerCase();
+            let songs = document.querySelectorAll("#songList li");
+
+            songs.forEach(song => {
+                if (song.innerText.toLowerCase().includes(input) && input !== "") {
+                    song.classList.add("highlight");
+                } else {
+                    song.classList.remove("highlight");
+                }
+            });
+        }
+    </script>
+
+<!-- <iframe src="https://streamtape.com/e/2bO3wwJRDriVx3/" width="800" height="600" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe> -->
+</body>
+</html>
+
