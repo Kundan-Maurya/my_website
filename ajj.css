@@ -1,0 +1,201 @@
+body {
+    background-color: gray;
+      /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  */
+    /* overflow: hidden; */ 
+    /* height: 100vh; 
+    margin: 0;*/
+
+}
+
+@keyframes popup {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); box-shadow: 0 0 15px orange; }
+    100% { transform: scale(1); }
+}
+h1
+{
+    font-size: 26px;
+    line-height: 0.4in;
+    
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid rebeccapurple; */
+    
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+    text-shadow: 3px 0.8px 2px black;
+}
+
+.click-btn {
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgb(0, 255, 98);
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    transition: transform 0.5s ease-in-out;
+    
+
+}
+
+input {
+    padding: 10px;
+    width: 30%;
+    height: 30px;
+    font-size: 16px;
+    /* margin-bottom: 20px; */
+    margin-top: 0px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-top: 0px auto;
+}
+.search
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+.highlight {
+    background: #ff0000 !important;
+    color: black;
+    transform: scale(1.1);
+    font-weight: bold;
+    box-shadow: 0 0 10px #00fff7;
+    
+}
+
+.popup-effect {
+    animation: popup 0.5s ease-in-out;
+}
+a{
+    text-decoration: none;
+    font-size: 20px ;
+    color: white;
+    font-weight: bold;   
+}
+.dabba
+{
+    width: 50%;
+    height: 35vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: url(img1.jpg);
+    background-image: nosave;
+    background-size: cover;
+    position: relative;
+    /* left: -300px; */
+    /* top: 100px; */
+    /* margin-bottom: 60px; */
+    margin: 0px auto;
+
+}
+.para
+{
+    width: 50%;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 50px;
+     display: none; 
+    /* position:relative;
+    left: 0px; */
+
+}
+.nav{
+    background-color: #d0a1f2;
+}
+.nav>ul
+{
+    /* width: 100%; */
+    height: 80px;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content:center;
+}
+.nav>ul>li
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+}
+li>a
+{
+    color: black;
+    text-shadow: 0.88px 0.5px 0.8px none;
+    
+}
+li>a:visited
+{
+    color: rgb(0, 0, 0);
+    text-shadow: 0.88px 0.5px 0.8px white;
+}
+option
+{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+.video_container
+{
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid none;
+    background-color: black;
+    margin-top: 200px;
+}
+.video
+{
+    width: 50vh;
+    height: 50vh;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 20px;
+    background-color: bisque;
+    color: black;
+    background: url("Admin_Block_IIT-R.JPG");
+    background-size: cover;
+}
