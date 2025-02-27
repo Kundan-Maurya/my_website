@@ -1,91 +1,121 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Song Search</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #0b0101;
-            color: rgb(174, 161, 161);
-        }
-        h1 {
-            margin-top: 20px;
-        }
-        input {
-            padding: 10px;
-            width: 50%;
-            font-size: 16px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            border: none;
-            outline: none;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            padding: 10px;
-            font-size: 18px;
-            background: #333;
-            margin: 5px auto;
-            width: 50%;
-            border-radius: 5px;
-            transition: all 0.4s ease;
-        }
-        .highlight {
-            background: #00de1e !important;
-            color: black;
-            transform: scale(1.1);
-            font-weight: bold;
-            box-shadow: 0 0 10px #ff9800;
-        }
-    </style>
+    <title>Dynamic Animated Boxes</title>
+    <link rel="stylesheet" href="ajj.css">
+    <link rel="stylesheet" href="ajj.js">
+    <script src="ajj.js"></script>
 </head>
+
+
+<!------------------------------------------------------------------------------------------------------------------------>
+
+
+
 <body>
-    <h1>Search Your Favorite Song</h1>
-    <input type="text" id="searchBox" placeholder="Search for a song..." onkeyup="searchSong()">
+
+    <div class="nav">
+        <ul>
+            <li><a href="#" onclick="transformBoxes()">section_1</a></li>
+            <li><a href="#">
+                <select name="hello" id="section_2" style="font-size: 20px;font-weight: bold; color: rgb(0, 0, 0);background-color: #d0a1f2 ; border: none;
+    outline: none; cursor: pointer;">
+                <option value="">section_2</option>
+                <option value="">ONE</option>
+                <option value="">TWO</option>
+                <option value="">THREE</option>
+                <option value="">FIVE</option>
+                <option value="">FOUR</option>
+                <option value="">SIX</option>
+            </select></a></li>
+            <li><a href="#">sectioin_3</a></li>
+            <li><a href="#">section_4</a></li>
+            <li><a href="#">section_4</a></li>
+        </ul>
+    </div>
+    <div class="dabba"></div>
+
+    <div class="search">
+
+    <input type="number" id="searchBox" placeholder="Enter a year..."  list="data" onkeyup="searchSong()">
+    </div>
+
+    <div class="container" id="songList">
+        <button class="click-btn" onclick="transformBoxes()">Go</button>
+        <div class="box" data-range="1900-1909" style="background: url(img1.jpg);"><a href="#">1900-1909</a></div>
+        <div class="box" data-range="1910-1919" style="background: url(img2.jpg);"><a href="#">1910-1919</a></div>
+        <div class="box" data-range="1920-1929" style="background: url(img3.jpg);"><a href="#">1920-1929</a></div>
+        <div class="box" data-range="1930-1939" style="background: url(img1.jpg);"><a href="#">1930-1939</a></div>
+        <div class="box" data-range="1940-1949" style="background: url(img2.jpg);"><a href="#">1940-1949</a></div>
+        <div class="box" data-range="1950-1959" style="background: url(img3.jpg);"><a href="#">1950-1959</a></div>
+        <div class="box" data-range="1960-1969" style="background: url(img1.jpg);"><a href="#">1960-1969</a></div>
+        <div class="box" data-range="1970-1979" style="background: url(img2.jpg);"><a href="#">1970-1979</a></div>
+        <div class="box" data-range="1980-1989" style="background: url(img3.jpg);"><a href="#">1980-1989</a></div>
+        <div class="box" data-range="1990-1999" style="background: url(img1.jpg);"><a href="#">1990-1999</a></div>
+    </div>
+
+  
+<div class="para">
+
+
+    <h1>
+
+        <dt>
+            <dl>
+                hello
+                <dd>
+                    hii Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                    . Velit aperiam voluptatem illum quae quisquam facere delectus reiciendis quas in explicabo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta culpa dolore corrupti aut? Non
+                </dd>
+            </dl>
+            <dl>
+                Kundan 
+                <dd>
+                    ipsa possimus magni voluptatum totam! Saepe itaque, obcaecati magni maxime nisi suscipit non et nobis numquam.
+      Inventore accusamus soluta, commodi optio hic asperiores, delectus magnam ullam consequatur excepturi error quia,
+       velit ipsum alias illum explicabo. Aut itaque sunt quam enim, suscipit neque? Quod a non repudiandae fugit asper
+                </dd>
+            </dl>
+            <dl>
+                kumar
+                <dd>
+                    iores provident voluptate nulla nisi error veritatis? In perferendis sit quae quas odio veritatis adipisci iste 
+                    velit ipsa, harum expedita commodi architecto ratione, odit veniam accusantium modi
+                  similique, placeat pariatur? Nam aliquid totam temporibus ullam, in ipsum nihil adipisci?
+                </dd>
+            </dl>
+        </dt>
+     
+      </h1>
+
+    </div>
     
-    <ul id="songList">
-        <li>Photo song</li>
-        <li>Hanuman Chalisa</li>
-        <li>Faded</li>
-        <li>Despacito</li>
-        <li>Let Me Down Slowly</li>
-        <li>Closer</li>
-        <li>Perfect</li>
-        <li>Memories</li>
-        <li>Havana</li>
-        <li>Senorita</li>
-    </ul>
-    <!-- <iframe src="https://streamtape.com/e/BqjwzjRrkwtyk7y/" width="800" height="600" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe>
-    --><script> 
-        function searchSong() {
-            let input = document.getElementById("searchBox").value.toLowerCase();
-            let songs = document.querySelectorAll("#songList li");
 
-            songs.forEach(song => {
-                if (song.innerText.toLowerCase().includes(input) && input !== "") {
-                    song.classList.add("highlight");
-                } else {
-                    song.classList.remove("highlight");
-                }
-            });
-        }
-    </script>
+    <datalist id="data"> 
 
-
-<!-- <iframe src="https://streamtape.com/e/2bO3wwJRDriVx3/" width="800" height="600" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"></iframe> -->
-
-<div class="container" style="width: 600px; height: 200px; border: 1px solid red ;background-color: rgb(255, 8, 0); margin: 0px auto;">
-
+        <option >1900</option>
+        <option >1910</option>
+        <option >1920</option>
+        <option >1930</option>
+        <option >1940</option>
+        <option >1950</option>
+        <option >1960</option>
+        <option >1970</option>
+        <option >1980</option>
+        <option >1990</option>
+        <option >2000</option>
+    </datalist>
+    <!------------------------------------------------------------------------------------------------------------------------>
+    
+<div class="video_container">
+    <div class="video"></div>
+    <div class="video"></div>
+    <div class="video"></div>
+    <div class="video"></div>
+    <div class="video">click</video></div>
 </div>
 </body>
-
-
 </html>
-
