@@ -192,10 +192,24 @@ option
     width: 50vh;
     height: 50vh;
     border-radius: 20px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 245, 245);
     margin: 20px;
     background-color: bisque;
     color: black;
-    background: url("Admin_Block_IIT-R.JPG");
+   
+}
+#video5
+{
+ background: url("Admin_Block_IIT-R.JPG");
+ background-size: cover;
+}
+#video1
+{
+    background: url("img1.jpg");
+    background-size: cover;
+}
+#video2
+{
+    background: url("wallpaper1.jpg");
     background-size: cover;
 }
