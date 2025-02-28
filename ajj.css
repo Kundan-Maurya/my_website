@@ -109,12 +109,12 @@ a{
 }
 .dabba
 {
-    width: 50%;
-    height: 35vh;
+    width: 60%;
+    height: 25vh;
     border: 1px solid black;
     border-radius: 20px;
     background: url(img1.jpg);
-    background-image: nosave;
+    /* background-image: nosave; */
     background-size: cover;
     position: relative;
     /* left: -300px; */
@@ -130,7 +130,9 @@ a{
     border: 1px solid white;
     border-radius: 5px;
     margin-left: 50px;
-     display: none; 
+    background-color: slategray;
+    margin-top: 200px;
+     /* display: none;  */
     /* position:relative;
     left: 0px; */
 
