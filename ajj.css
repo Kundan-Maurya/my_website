@@ -225,8 +225,30 @@ option
     width: 400px;
     height: 400px;
     border-radius: 20px;
-    background-color: yellow;
+    /* background-color: yellow; */
     margin: 0px auto;
     margin-top: 30px;
     border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
+#hlo
+{
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    background-color : slategrey;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    scroll-padding-left: 1;
+    text-align: left;
+}
+::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
