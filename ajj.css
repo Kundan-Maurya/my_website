@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(230, 21, 21, 0.784);
+    background-color: rgba(102, 95, 95, 0.882);
       /* display: flex;
     justify-content: center;
     align-items: center;
@@ -217,4 +217,14 @@ option
 {
     background: url("img2.jpg");
     background-size: cover;
+}
+.hei
+{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: yellow;
+    margin: 0px auto;
+    margin-top: 30px;
+    border: 1px solid black;
 }
