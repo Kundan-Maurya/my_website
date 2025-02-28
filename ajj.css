@@ -109,8 +109,8 @@ a{
 }
 .dabba
 {
-    width: 60%;
-    height: 25vh;
+    width: 70%;
+    height: 20vh;
     border: 1px solid black;
     border-radius: 20px;
     background: url(img1.jpg);
@@ -125,20 +125,20 @@ a{
 }
 .para
 {
-    width: 50%;
-    height: auto;
+    /* width: 50%;
+    height: auto; */
     border: 1px solid white;
     border-radius: 5px;
     margin-left: 50px;
     background-color: slategray;
     margin-top: 200px;
-     /* display: none;  */
+     display: none; 
     /* position:relative;
     left: 0px; */
 
 }
 .nav{
-    background-color: #acd7cd;
+    background-color: #eb762e;
 }
 .nav>ul
 {
