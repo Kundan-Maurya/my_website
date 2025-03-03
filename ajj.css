@@ -202,18 +202,22 @@ option
 }
 #video5
 {
- background: url("Admin_Block_IIT-R.JPG");
- background-size: cover;
+    background: url("Admin_Block_IIT-R.JPG");
+    background-size: cover;
+    width: 80vh;
+    
 }
 #video1
 {
     background: url("img1.jpg");
     background-size: cover;
+    width: 70vh;
 }
 #video2
 {
     background: url("wallpaper1.jpg");
     background-size: cover;
+    width: 40vh;
 }
 #video3
 {

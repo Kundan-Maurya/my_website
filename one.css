@@ -4,3 +4,129 @@ h1{
     font-weight: bold;
     text-align: center;
 }
+
+.video
+{
+    width: 30vh;
+    height: 30vh;
+    background-color: red;
+    border: 1px solid blue;
+    box-shadow: 15px 15px 0px black;
+    margin: 20px;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.video:hover
+{
+   
+    transform: scale(1.1);
+}
+.video>a{
+    color: black;
+}
+.container
+{
+    /* display: inline-block; */
+    width: 80%;
+    /* height: 100%; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 0px;
+    overflow: auto;
+    position: relative;
+    right: -340px;
+    
+    /* padding-top: 10px;
+    */
+}
+.left:hover
+{
+    /* transform: scaleX(1.5); */
+    /* transform: scaleY(1.5); */
+    height: 100vh;
+    background-color: lightgreen;
+    /* transform: scaleY(5); */
+}
+.left
+{
+    display: inline-block;
+    width: 40vh;
+    height: 5vh;
+    /* height: 100vh; */
+    border: 2px solid black;
+    border-radius: 20px;
+    position:absolute;
+    display: hidden;
+    background-color: rgb(255, 255, 255);
+    /* display: none; */
+
+}
+.left>h4
+{
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    /* padding: 5px; */
+    
+}
+.nav
+{
+
+    width: 5vh;
+    height: 5vh;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: greenyellow;
+    margin: 0px auto;
+    cursor:grab;
+    margin-bottom: 100px;
+
+}
+.nav:hover
+{
+    width:100%;
+    height: 15vh;
+    background-color: none;
+    border: 2px solid black;
+    /* margin-top: 100px; */
+}
+#two1,#one1
+{
+    background: url("striped.webp");
+    background-size: cover; 
+}
+#two2,#one2
+{
+    background: url("striped2.avif");
+    background-size: cover; 
+}
+#two3,#one3
+{
+    background: url("striped3.avif");
+    background-size: cover; 
+}
+#two4,#one4
+{
+    background: url("striped5.avif");
+    background-size: cover; 
+}
+#two5,#one5
+{
+    background: url("striped4.avif");
+    background-size: cover; 
+}
+#two1
+{
+    background: url("striped.webp");
+    background-size: cover; 
+}
