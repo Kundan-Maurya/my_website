@@ -59,3 +59,7 @@
                 }
             });
         }
+        if (localStorage.getItem("isLoggedIn") !== "true") {
+            alert("Please login or register first!");
+            window.location.href = "login.html"; // Redirect to login page
+        }
