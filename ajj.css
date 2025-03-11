@@ -256,3 +256,72 @@ option
     font-size: 1rem;
     text-transform: uppercase;
   }
+/* .btn_one
+{
+    position: relative;
+    border: 1px solid black;
+    top: -20px;
+    font-size: 30px;
+    font-family: 700;
+    color: white;
+    display: inline-block;
+    border-radius: 5px;
+    width: 70px;
+    background-color: rgb(255, 136, 0);
+    padding: 5px;
+    
+    left: 140px;
+}
+.whole_div
+{
+    width: 100%;
+    height: 100vh;
+    
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+}
+.menu
+{
+    width: 20%;
+    position: absolute;
+    height: 90vh;
+    box-shadow: 0px 0px 3px white;
+    background-color: rgb(164, 154, 148);
+    left: -350px;
+    transition: all 0.5s linear;
+    border-radius: 10px;
+    margin-top: -18px;
+    text-align: center;
+    line-height: 60px;
+}
+#check:checked ~.menu
+{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    
+}
+.menu div a
+{
+    font-size: 25px;
+    color: black;
+    
+
+}
+.menu>label
+{
+
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 70px;
+    background-color: rgb(255, 136, 0);
+    padding: 5px;
+}
+#check:checked ~.btn_one
+{
+    color: black;
+    left: -500px;
+} */
