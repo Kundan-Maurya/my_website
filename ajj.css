@@ -36,9 +36,8 @@ h1
 .box {
     width: 100px;
     height: 100px;
-    background-color: white;
+    background-color: rgb(202, 38, 38);
     position: absolute;
-    color: white;
     border-radius: 50%;
     text-align: center;
     justify-content: center;
@@ -47,7 +46,10 @@ h1
     align-items: center;
     font-weight: bold;
     transition: transform 0.2s ease-in-out;
-    text-shadow: 3px 0.8px 2px black;
+}
+.box>a
+{
+    color: black;
 }
 
 .click-btn {
@@ -56,8 +58,8 @@ h1
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: rgb(27, 55, 169);
-    color: black;
+    background: rgb(255, 10, 10);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -215,13 +217,18 @@ option
 }
 #video2
 {
-    background: url("wallpaper1.jpg");
+    background: url("Kundan.jpg");
     background-size: cover;
     width: 40vh;
 }
 #video3
 {
     background: url("img2.jpg");
+    background-size: cover;
+}
+#video4
+{
+    background: url("kundan2.jpg");
     background-size: cover;
 }
 .hei
